@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 import { LandingPage } from './LandingPage/LandingPage'; 
+import {Route, Switch} from 'react-router-dom'; 
+import {Search} from './Search/Search'; 
 
 
-class App extends Component {
-  render() {
+function App() {
     return (
-    <LandingPage/>
+      <Switch>
+        <Route path='/search' component={Search}/>
+        <Route path='/' component={LandingPage}/>
+      </Switch>
     );
   }
-}
 
 export default App;

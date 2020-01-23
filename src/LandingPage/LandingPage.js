@@ -15,5 +15,5 @@ export function LandingPage() {
 				<SearchSuggestions/>
 			</div>
 		</div>
-		); 
+	); 
 }
